@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/******************* Navbar Starts *******************/
+.nav {
+  background: var(--black);
+
+  margin-bottom: 2.8rem;
+  padding: 1.2rem 1.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo--wrapper {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav__searchbar--wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.8rem;
+  background: #303030;
+  border: 1px solid #616161;
+  border-radius: 0.8rem;
+}
+
+.nav__searchbar--wrapper > div {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid white;
+  background: #fff;
+}
+
+.nav__searchbar-icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__searchbar {
+  width: 100%;
+  background: #303030;
+  color: #b5b5b5;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.82rem;
+  border: none;
+}
+
+.nav__searchbar:focus {
+  outline: none;
+}
+
+.nav__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__icons--wrapper {
+  width: 3.2rem;
+  height: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__icons--notification {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav__icons--profile {
+  padding: 2rem;
+}
+
+.nav__icons--profile {
+  padding: 0.9rem 0.5rem 0.9rem;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  line-height: 1.56rem;
+  font-weight: 500;
+  background: #36fba1;
+}
+/******************* Navbar Ends *******************/
