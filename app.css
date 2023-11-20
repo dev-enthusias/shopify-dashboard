@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 * {
   padding: 0;
@@ -129,6 +129,7 @@ body {
 
   padding: 1.2rem 0.8rem 1.2rem 1.6rem;
   font-size: 1.3rem;
+  font-weight: 500;
   line-height: 1.82rem;
   margin-bottom: 1.6rem;
 
@@ -159,3 +160,41 @@ body {
   padding: 0.8rem;
 }
 /******************* Trial Ends *******************/
+
+/******************* Setup Starts *******************/
+.setup {
+  display: flex;
+  padding: 0.8rem;
+  color: #303030;
+}
+
+.setup__title {
+  font-size: 1.4rem;
+  line-height: 1.96rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.setup__description {
+  font-size: 1.3rem;
+  line-height: 1.82rem;
+  margin-bottom: 1.6rem;
+}
+
+.setup__progress {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.setup__dropdown {
+  padding: 0.4rem;
+}
+
+progress::-webkit-progress-bar {
+  background-color: orange;
+}
+progress::-webkit-progress-value {
+  background-color: red;
+}
+/******************* Setup Ends *******************/
