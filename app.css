@@ -17,6 +17,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Inter', sans-serif;
+  background: #f1f1f1;
 }
 
 a {
@@ -210,7 +211,7 @@ progress::-webkit-progress-value {
 
 .step {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.8rem;
 
   padding: 0.8rem 0.8rem 1.2rem;
@@ -268,3 +269,113 @@ progress::-webkit-progress-value {
   color: #323232;
 }
 /******************* Setup Steps Ends *******************/
+
+/******************* Profile dropdown starts *******************/
+.profile--dropdown {
+  width: 32rem;
+  max-width: 32rem;
+  padding-block: 0.6rem;
+  border-radius: 1.4rem;
+  border: 1px solid #f1f1f1;
+  background-color: white;
+  color: #303030;
+
+  position: absolute;
+  right: 1.6rem;
+  top: 6.8rem;
+}
+
+.profile__header {
+  padding: 0 0.6rem;
+}
+
+.profile__header-list--1 {
+  background: #f1f1f1;
+  padding: 0.4rem 1.2rem 0.4rem 0.8rem;
+  border-radius: 0.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 0.4rem;
+}
+
+.profile__title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.82rem;
+}
+
+.profile__header-list--2 {
+  padding: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.profile__avatar--wrapper {
+  border-radius: 0.525rem;
+  padding: 0.963rem 0.588rem 0.104rem 0.613rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: #36fba1;
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.47rem;
+  color: #00000066;
+}
+
+.menu__items {
+  font-size: 1.3rem;
+  line-height: 1.82rem;
+}
+
+.profile__main {
+  border: 1px solid #f1f1f1;
+  padding: 0 0.6rem;
+  display: grid;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.profile__main--items {
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.82rem;
+}
+
+.profile__footer--items-1 {
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  line-height: 1.82rem;
+  margin-bottom: 0.4rem;
+}
+
+.profile__footer {
+  padding: 0 0.6rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.profile__username {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.82rem;
+}
+/******************* Profile dropdown Ends *******************/
+
+/******************* Utilities start *******************/
+.u-xy-center {
+  display: flex;
+  align-items: center;
+}
+
+.gap-8 {
+  gap: 0.8rem;
+}
+/******************* Utilities end *******************/
+
+/******************* Javascript manipulated styles *******************/
+.hidden {
+  display: none;
+}
+/******************* Javascript manipulated styles *******************/
