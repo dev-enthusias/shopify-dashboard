@@ -170,7 +170,7 @@ a {
   display: flex;
   padding: 1.6rem;
   color: #303030;
-  margin-bottom: 1.6rem;
+  background-color: white;
 }
 
 .setup__title {
@@ -207,6 +207,7 @@ progress::-webkit-progress-value {
 /******************* Setup Steps Start *******************/
 .steps {
   padding: 0.8rem;
+  background-color: white;
 }
 
 .step {
@@ -363,14 +364,69 @@ progress::-webkit-progress-value {
 }
 /******************* Profile dropdown Ends *******************/
 
+/******************* Nofication dropdown Ends *******************/
+.notifications__dropdown {
+  background: white;
+  border-radius: 1.4rem;
+  padding: 1.6rem;
+  width: 35.8rem;
+
+  position: absolute;
+  top: 6.8rem;
+  right: 1.6rem;
+  border: 1px solid #dbdbdb;
+}
+
+.notifications {
+  padding: 1.6rem;
+  background: #f1f1f1;
+  color: #303030;
+}
+
+.notifications__header {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.96rem;
+}
+
+.notifications__alert {
+  color: #303030;
+  font-size: 1.3rem;
+  line-height: 1.82rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.notifications__icons {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid black;
+}
+/******************* Notification dropdown Ends *******************/
+
 /******************* Utilities start *******************/
 .u-xy-center {
   display: flex;
   align-items: center;
 }
 
+.u-x-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .gap-8 {
   gap: 0.8rem;
+}
+
+.gap-16 {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.mb-16 {
+  margin-bottom: 1.6rem;
 }
 /******************* Utilities end *******************/
 

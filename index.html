@@ -10,27 +10,17 @@
     <!-------------------- Navbar Starts -------------------->
     <nav class="nav">
       <div class="logo--wrapper">
-        <img
-          src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"
-          alt="Shopify logo"
-          class="logo"
-        />
+        <a href="https://www.shopify.com">
+          <img
+            src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"
+            alt="Shopify logo"
+            class="logo"
+          />
+        </a>
       </div>
 
       <div class="nav__searchbar--wrapper">
         <div>
-          <!-- <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            class="nav__searchbar-icon"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M8.82264 10.3833C7.89957 11.0841 6.74835 11.5 5.5 11.5C2.46243 11.5 0 9.03757 0 6C0 2.96243 2.46243 0.5 5.5 0.5C8.53757 0.5 11 2.96243 11 6C11 7.24835 10.5841 8.39957 9.8833 9.32264L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L8.82264 10.3833ZM9.5 6C9.5 8.20914 7.70914 10 5.5 10C3.29086 10 1.5 8.20914 1.5 6C1.5 3.79086 3.29086 2 5.5 2C7.70914 2 9.5 3.79086 9.5 6Z"
-              fill="#b5b5b5"
-            />
-          </svg> -->
           <img
             src="https://crushingit.tech/hackathon-assets/icon-search.svg"
             alt="Search icon"
@@ -74,7 +64,9 @@
         <p class="trial__message">
           Extend your trial for $1/month for 3 months on select plans.
         </p>
-        <a href="#" class="trial__link">Select a plan</a>
+        <a href="https://www.shopify.com/pricing" class="trial__link">
+          Select a plan
+        </a>
       </div>
       <div class="trial__cancel--wrapper">
         <img
@@ -246,5 +238,30 @@
       <div></div>
     </section>
     <!-------------------- Profile dropdown ends -------------------->
+
+    <!-------------------- Notification dropdown starts  -------------------->
+    <section class="notifications__dropdown hidden">
+      <div class="u-x-between mb-16">
+        <p class="notifications__header">Alerts</p>
+        <div class="gap-16">
+          <img
+            src="https://crushingit.tech/hackathon-assets/icon-filter.svg"
+            alt=""
+            class="notifications__icons"
+          />
+          <img
+            src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg"
+            alt="Checkmark inside a circle"
+            class="notifications__icons"
+          />
+        </div>
+      </div>
+      <ul class="notifications">
+        <p class="notifications__alert">
+          Alerts about your store and account will show here
+        </p>
+      </ul>
+    </section>
+    <!-------------------- Notification dropdown ends -------------------->
   </body>
 </html>
