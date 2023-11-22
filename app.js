@@ -23,3 +23,15 @@ const notificationIcon = document.getElementById('notification');
 notificationIcon.addEventListener('click', function () {
   notificationMenuComponent.classList.toggle('hidden');
 });
+
+// Toggle setup steps
+const setupStepsComponent = document.querySelector('.steps');
+const dropdown = document.querySelector('.setup__dropdown');
+const dropdownImg = document.getElementById('dropdown');
+dropdown.addEventListener('click', function () {
+  setupStepsComponent.classList.toggle('hidden');
+
+  dropdownImg.src = !setupStepsComponent.classList.contains('hidden')
+    ? 'https://crushingit.tech/hackathon-assets/icon-arrow-up.svg'
+    : 'https://crushingit.tech/hackathon-assets/icon-arrow-down.svg';
+});
