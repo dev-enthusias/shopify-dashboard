@@ -428,7 +428,7 @@ progress::-webkit-progress-value {
   align-items: center;
 }
 
-.u-flex {
+.flex {
   display: flex;
 }
 
@@ -452,7 +452,7 @@ progress::-webkit-progress-value {
   border: 1px solid black;
 }
 
-.circle {
+.circle__unchecked {
   width: 2.4rem;
   height: 2.4rem;
 }
@@ -471,6 +471,14 @@ progress::-webkit-progress-value {
   gap: 0.8rem;
 }
 
+.gap-16 {
+  gap: 1.6rem;
+}
+
+.gap-y-16 {
+  row-gap: 1.6rem;
+}
+
 .p-8 {
   padding: 0.8rem;
 }
@@ -481,11 +489,6 @@ progress::-webkit-progress-value {
 
 .pb-12 {
   padding-bottom: 1.2rem;
-}
-
-.gap-16 {
-  display: flex;
-  gap: 1.6rem;
 }
 
 .mb-16 {

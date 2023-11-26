@@ -90,14 +90,14 @@
           Use this personalized guide to get your store up and running.
         </p>
         <div class="setup__progress">
-          <span>1 / 5 completed</span>
+          <p><span class="completed-steps">1</span> / 5 completed</p>
           <progress
             max="100"
             value="20"
             aria-label="Setup progress"
             class="progress-bar"
           >
-            20%
+            30%
           </progress>
         </div>
       </div>
@@ -113,18 +113,22 @@
 
     <!-------------------- Setup Steps Start -------------------->
     <ol class="steps hidden">
-      <li class="u-flex bg-grey gap-8 p-8 pb-12 rounded-10">
-        <div class="">
+      <li class="onboarding flex gap-8 p-8 pb-12 rounded-10">
+        <div class="circle">
           <img
             src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
             alt="Dotted circle image"
-            class="circle"
+            class="circle__unchecked"
           />
         </div>
-        <div class="pt-2 flex-col gap-16">
-          <h4 class="text-13 font-bold">Customize your online store</h4>
+        <div class="pt-2 flex flex-col gap-y-16">
+          <h4 class="onboarding__step text-13 font-bold" data-step="0">
+            Customize your online store
+          </h4>
 
-          <div class="hidden gap-16 flex-col items-start">
+          <div
+            class="onboarding__content hidden flex gap-16 flex-col items-start"
+          >
             <p class="text-13 font-medium">
               Choose a theme and add your logo, colors, and images to reflect
               your brand. <a href="#" class="text-14">Learn more</a>
@@ -135,18 +139,22 @@
         </div>
       </li>
 
-      <li class="u-flex bg-grey gap-8 p-8 pb-12 rounded-10">
-        <div class="">
+      <li class="onboarding flex gap-8 p-8 pb-12 rounded-10">
+        <div class="circle">
           <img
             src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
             alt="Dotted circle image"
-            class="circle"
+            class="circle__unchecked"
           />
         </div>
-        <div class="pt-2 flex-col gap-16">
-          <h4 class="text-13 font-bold">Add your first product</h4>
+        <div class="pt-2 flex flex-col gap-y-16">
+          <h4 class="onboarding__step text-13 font-bold" data-step="1">
+            Add your first product
+          </h4>
 
-          <div class="hidden gap-16 flex-col items-start">
+          <div
+            class="onboarding__content hidden flex flex-col gap-16 items-start"
+          >
             <p class="text-13 font-medium">
               Write a description, add photos, and set pricing for the products
               you plan to sell. <a href="#" class="text-14">Learn more</a>
@@ -159,19 +167,23 @@
           </div>
         </div>
       </li>
-      
-      <li class="u-flex bg-grey gap-8 p-8 pb-12 rounded-10">
-        <div class="">
+
+      <li class="onboarding flex gap-8 p-8 pb-12 rounded-10">
+        <div class="circle">
           <img
             src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
             alt="Dotted circle image"
-            class="circle"
+            class="circle__unchecked"
           />
         </div>
-        <div class="pt-2 flex-col gap-16">
-          <h4 class="text-13 font-bold">Add a custom domain</h4>
+        <div class="pt-2 flex flex-col gap-y-16">
+          <h4 class="onboarding__step text-13 font-bold" data-step="2">
+            Add a custom domain
+          </h4>
 
-          <div class="hidden gap-16 flex-col items-start">
+          <div
+            class="onboarding__content hidden flex gap-16 flex-col items-start"
+          >
             <p class="text-13 font-medium">
               Your current domain is 222219.myshopify.com but you can add a
               custom domain to help customers find your online store.
@@ -183,18 +195,22 @@
         </div>
       </li>
 
-      <li class="u-flex bg-grey gap-8 p-8 pb-12 rounded-10">
-        <div class="">
+      <li class="onboarding flex gap-8 p-8 pb-12 rounded-10">
+        <div class="circle">
           <img
             src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
             alt="Dotted circle image"
-            class="circle"
+            class="circle__unchecked"
           />
         </div>
-        <div class="pt-2 flex-col gap-16">
-          <h4 class="text-13 font-bold">Name your store</h4>
+        <div class="pt-2 flex flex-col gap-16">
+          <h4 class="onboarding__step text-13 font-bold" data-step="3">
+            Name your store
+          </h4>
 
-          <div class="hidden gap-16 flex-col items-start">
+          <div
+            class="onboarding__content hidden flex gap-16 flex-col items-start"
+          >
             <p class="text-13 font-medium">
               Your temporary store name is currently Davii collections. The
               store name appears in your admin and your online store.
@@ -206,18 +222,22 @@
         </div>
       </li>
 
-      <li class="u-flex bg-grey gap-8 p-8 pb-12 rounded-10">
-        <div class="">
+      <li class="onboarding flex gap-8 p-8 pb-12 rounded-10">
+        <div class="circle">
           <img
             src="https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg"
             alt="Dotted circle image"
-            class="circle"
+            class="circle__unchecked"
           />
         </div>
-        <div class="pt-2 flex-col gap-16">
-          <h4 class="text-13 font-bold">Set up a payment provider</h4>
+        <div class="pt-2 flex flex-col gap-16">
+          <h4 class="onboarding__step text-13 font-bold" data-step="4">
+            Set up a payment provider
+          </h4>
 
-          <div class="hidden gap-16 flex-col items-start">
+          <div
+            class="onboarding__content hidden flex gap-16 flex-col items-start"
+          >
             <p class="text-13 font-medium">
               Choose a payment provider to start accepting payments. You'll need
               to create an account with the payment provider and set it up with
@@ -279,7 +299,7 @@
     <section class="notifications--dropdown hidden">
       <div class="u-x-between mb-16">
         <p class="notifications__header">Alerts</p>
-        <div class="gap-16">
+        <div class="flex gap-16">
           <img
             src="https://crushingit.tech/hackathon-assets/icon-filter.svg"
             alt=""

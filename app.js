@@ -25,6 +25,9 @@ notificationIcon.addEventListener('click', function () {
 });
 
 // Toggle setup steps
+
+// on clicking on the drop down open the first step setup
+
 const setupStepsComponent = document.querySelector('.steps');
 const dropdown = document.querySelector('.setup__dropdown');
 const dropdownImg = document.getElementById('dropdown');
@@ -35,3 +38,74 @@ dropdown.addEventListener('click', function () {
     ? 'https://crushingit.tech/hackathon-assets/icon-arrow-up.svg'
     : 'https://crushingit.tech/hackathon-assets/icon-arrow-down.svg';
 });
+
+// Expand the onboarding step
+const allSetupSteps = document.querySelectorAll('.onboarding__step');
+
+// When i click on a link
+allSetupSteps.forEach((step, index) => {
+  step.addEventListener('click', function (event) {
+    console.log(`clicked ${index}`);
+    if (
+      step.nextElementSibling &&
+      step.nextElementSibling.classList.contains('hidden')
+    ) {
+      step.nextElementSibling.classList.remove('hidden');
+      step.closest('.onboarding').classList.add('bg-grey');
+    }
+
+    if (
+      step.nextElementSibling &&
+      !step.nextElementSibling.classList.contains('hidden')
+    ) {
+      const otherSteps = Array.from(
+        document.querySelectorAll('.onboarding__step')
+      ).filter(step => step !== event.target);
+
+      otherSteps.forEach(step => {
+        step.nextElementSibling &&
+          step.nextElementSibling.classList.add('hidden');
+
+        step.closest('.onboarding').classList.remove('bg-grey');
+      });
+
+      step.nextElementSibling.classList.remove('hidden');
+      step.closest('.onboarding').classList.add('bg-grey');
+    }
+  });
+});
+
+// Updating the onboarding progress
+const circleWrappers = document.querySelectorAll('.circle');
+
+let completedSteps = 0;
+let progress = 0;
+
+document.querySelector('.completed-steps').textContent = completedSteps;
+document.querySelector('.progress-bar').value = progress;
+document.querySelector('.progress-bar').textContent = 0;
+
+circleWrappers.forEach(wrapper =>
+  wrapper.addEventListener('click', function (e) {
+    const img = e.target;
+
+    // Toggle img
+    img.src = img.src.includes('dashed-circle')
+      ? 'https://crushingit.tech/hackathon-assets/icon-checkmark-circle.svg'
+      : 'https://crushingit.tech/hackathon-assets/icon-dashed-circle.svg';
+
+    if (img.src.includes('checkmark-circle')) {
+      ++completedSteps;
+      progress = completedSteps * 20;
+
+      document.querySelector('.completed-steps').textContent = completedSteps;
+      document.querySelector('.progress-bar').value = progress;
+    }
+  })
+);
+
+// it checks if the src is the checkmark complete
+
+// if it is it is hides the step extension and displays the next one in line and if the next one in line is not checkmarked it goes down the list even further and checks
+
+//if it is circle checkmark then it does nothing to the progress bar and nothing it reduces the progress bar and sticks to displaying the drop of that list and not the next one
