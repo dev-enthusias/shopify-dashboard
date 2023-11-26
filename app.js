@@ -100,11 +100,46 @@ circleWrappers.forEach(wrapper =>
 
       document.querySelector('.completed-steps').textContent = completedSteps;
       document.querySelector('.progress-bar').value = progress;
+
+      allSetupSteps.forEach(step => {
+        step.nextElementSibling &&
+          step.nextElementSibling.classList.add('hidden');
+
+        step.closest('.onboarding').classList.remove('bg-grey');
+      });
+
+      allSetupSteps[completedSteps].nextElementSibling.classList.remove(
+        'hidden'
+      );
+      allSetupSteps[completedSteps]
+        .closest('.onboarding')
+        .classList.add('bg-grey');
+    }
+
+    if (img.src.includes('dashed-circle')) {
+      --completedSteps;
+      progress = completedSteps * 20;
+
+      document.querySelector('.completed-steps').textContent = completedSteps;
+      document.querySelector('.progress-bar').value = progress;
+
+      allSetupSteps.forEach(step => {
+        step.nextElementSibling &&
+          step.nextElementSibling.classList.add('hidden');
+
+        step.closest('.onboarding').classList.remove('bg-grey');
+      });
+
+      allSetupSteps[completedSteps].nextElementSibling.classList.remove(
+        'hidden'
+      );
+
+      allSetupSteps[completedSteps]
+        .closest('.onboarding')
+        .classList.add('bg-grey');
     }
   })
 );
-
-// it checks if the src is the checkmark complete
 
 // if it is it is hides the step extension and displays the next one in line and if the next one in line is not checkmarked it goes down the list even further and checks
 
